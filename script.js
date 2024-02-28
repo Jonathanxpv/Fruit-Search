@@ -29,8 +29,10 @@ function searchHandler(e) {
         suggestions.style.display = 'none';
     }
 }
+
+
 // Function to display suggestions in the suggestions container
-function showSuggestions(results, inputVal) {
+function showSuggestions(results) {
     suggestions.innerHTML = '';
 	// Create list items for each suggestion and append them to the suggestions container
 	results.forEach(result => {
@@ -43,7 +45,7 @@ function showSuggestions(results, inputVal) {
 }
 // Function to handle selection of a suggestion
 function useSuggestion(e) {
-	if (e.target.tagName === 'LI') {
+	if (e.target.tagName === 'li') {
         input.value = e.target.textContent;
         suggestions.style.display = 'none';
     }

@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
   
-
+/* Styling the Header and adding effect/animation */
 h1 {
   font-family: Palatino;
   font-weight: 600;
@@ -18,6 +18,7 @@ h1 {
   background-size: 400%;
   animation: move 5s ease infinite;
   background-image: linear-gradient( 68.7deg,  rgb(135, 145, 149) 13.2%, rgb(113, 124, 219) 29.8%, rgb(114, 67, 107) 48.9%, rgb(0, 0, 0) 68.2%, rgb(37, 38, 87) 86.4% );
+  
 }
 
 @keyframes move {
@@ -30,66 +31,47 @@ h1 {
   }
 }
   
-}
-
-:focus {
- background-color: #ffffff9e;
-}
-
+/* Styling the overall body/background */
 body {
   text-align: center;
   background: linear-gradient(90deg, red, blue);
   font-weight: bold;
 }
-
+/* Styling text input */
 input {
- border-radius: 5px;
+ border-radius: 10px;
+ padding: 5px;
+ background-color: transparent;
+ font-weight: Bold;
+ 
+ 
 }
-
+/* Styling div suggestions/dropdown */
 .search-container {
-  
- 
-  
- 
-}
-.search-container input,
-.search-container .suggestions {
-  
-  
-  
-  
-  
-  
-}
-.search-container input {
- 
-}
-.search-container .suggestions {
-  height: 2000px;
   text-align: center;
-   
+  height: 300px;
+  overflow: hidden;
+
+  
 }
 
+
+/* Removing bullet points from the list items */
 ul {
   list-style-type: none;
  
   
-}
-ul.has-suggestions {
-
-
   
 }
+/* Styling list */
 ul li {
   width: 200px;
   position: relative;
   margin: 15px auto;
   cursor: pointer;
 }
+/* Adding hover effect to list */
 ul li:hover {
   background-color: #b13ddf9e;
 }
 
-input {
-   /* TODO */
-}
